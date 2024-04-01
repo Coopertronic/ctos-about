@@ -13,6 +13,7 @@ class Dialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.ui = Ui_Dialog()
+        self.ui.setWindowIcon(QtGui.QIcon('assets/about.svg'))
         self.ui.setupUi(self)
         self.ui.textBrowser.append('<h1>Hello World</h1>')
         self.ui.textBrowser.append('This is a quick demo.')

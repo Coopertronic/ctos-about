@@ -9,7 +9,7 @@ url="https://coopertronic-ws.ddns.net/ctos-assets/"
 license=('custom')
 depends=('python' 'pyside6')
 source=("$url$pkgname/$pkgname-v$pkgver.zip")
-md5sums=('93a95c790a5d784033972daa2e696ca6')
+md5sums=('c13507a0a05f96e3ca66f4739d0623bf')
 
 package() {
   ##  Install documentation
@@ -22,7 +22,9 @@ package() {
   ##  Install binaries
   install -d $pkgdir/usr/share/$pkgname
   install -D -m644 $srcdir/scripts/* $pkgdir/usr/share/$pkgname/
+  install -d $pkgdir/usr/share/$pkgname/assets
   install -D -m755 $srcdir/assets/$pkgname.sh $pkgdir/usr/bin/$pkgname
+  install -D -m755 $srcdir/assets/$pkgname.svg $pkgdir/usr/share/$pkgname/assets/
 
   ##  Install game icon
   #install -d $pkgdir/usr/share/icons/hicolor/scalable/apps
