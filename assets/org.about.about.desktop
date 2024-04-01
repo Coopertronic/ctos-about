@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=About Coopertronic OS
+Comment=Gives a brief overview of what Coopertronic OS is all about.
+Exec=about
+Icon=documentinfo
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=false
