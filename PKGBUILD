@@ -7,7 +7,7 @@ pkgdesc="This is the about dialog for Coopertronic OS. It givs a breif overview 
 arch=('any')
 url="https://coopertronic-ws.ddns.net/ctos-assets/"
 license=('custom')
-depends=('python','pyside6')
+depends=('python' 'pyside6')
 source=("$url$pkgname/$pkgname-v$pkgver.zip")
 md5sums=('93a95c790a5d784033972daa2e696ca6')
 
@@ -21,8 +21,8 @@ package() {
 
   ##  Install binaries
   install -d $pkgdir/usr/share/$pkgname
-  install -D -m644 $srcdir/$pkgname-v$pkgver/* $pkgdir/usr/share/$pkgname/
-  install -D -m755 $pkgname.sh $pkgdir/usr/bin/$pkgname
+  install -D -m644 $srcdir/scripts/* $pkgdir/usr/share/$pkgname/
+  install -D -m755 $srcdir/assets/$pkgname.sh $pkgdir/usr/bin/$pkgname
 
   ##  Install game icon
   #install -d $pkgdir/usr/share/icons/hicolor/scalable/apps
@@ -30,5 +30,5 @@ package() {
 
   ##  Install Application desktop launcher
   install -d $pkgdir/usr/share/applications
-  install -D -m644 org.$pkgname.$pkgname.desktop $pkgdir/usr/share/applications/org.$pkgname.$pkgname.desktop
+  install -D -m644 $srcdir/assets/org.$pkgname.$pkgname.desktop $pkgdir/usr/share/applications/org.$pkgname.$pkgname.desktop
 }

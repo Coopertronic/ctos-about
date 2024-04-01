@@ -2,4 +2,4 @@
 
 ##  This launches the about Dialog for Coopertronic OS
 
-python /usr/share/ctos-about/dialog.py
+python /usr/share/about/dialog.py
