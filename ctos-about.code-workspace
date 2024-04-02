@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../ctos-about.Project"
+		},
+		{
+			"path": "../ctos-welcome"
+		},
+		{
+			"path": "../ctos-welcome.Project"
 		}
 	],
 	"settings": {}
