@@ -25,7 +25,7 @@ class Ui_Dialog(object):
             Dialog.setObjectName(u"Dialog")
         Dialog.resize(599, 517)
         icon = QIcon()
-        icon.addFile(u"/usr/share/about/assets/about.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../../../../usr/share/about/assets/about.svg", QSize(), QIcon.Normal, QIcon.Off)
         Dialog.setWindowIcon(icon)
         self.verticalLayout_2 = QVBoxLayout(Dialog)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -55,6 +55,6 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"About", None))
-        self.groupBox.setTitle(QCoreApplication.translate("Dialog", u"GroupBox", None))
+        self.groupBox.setTitle("")
     # retranslateUi
 

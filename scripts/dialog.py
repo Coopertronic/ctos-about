@@ -18,7 +18,7 @@ class Dialog(QDialog):
         self.ui.textBrowser.append('<h2>Introduction</h2>')
         self.ui.textBrowser.append('Coopertronic OS is designed primarily for myself to use on all my machines. I have included the things I commonly use from day to day. Coopertronic OS is based on ArchLinux and built using the ArchISO package. I like to use the KDE desktop.')
         self.ui.textBrowser.append('<h3>The KDE Desktop</h3>')
-        self.ui.textBrowser.append('The desktop is styled with the theme Neon Knights Green. I have added some of my own art to the mix and in the way of wallpapers and icons. It should be easy to see and find your way around.')
+        self.ui.textBrowser.append('The desktop is styled with the theme Neon Knights Green. I have added some of my own art to the mix in the way of wallpapers and icons. It should be easy to see and find your way around.')
 
 
 if __name__ == "__main__":
