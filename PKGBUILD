@@ -9,7 +9,7 @@ url="https://coopertronic-ws.ddns.net/ctos-assets/"
 license=('LGPL3')
 depends=('python' 'pyside6')
 source=("$url$pkgname/$pkgname-v$pkgver.zip")
-md5sums=('6d27821c8153987fa5bc1e853e031f99')
+md5sums=('98e8788287e732a0864509fd072f1d51')
 
 package() {
   ##  Install documentation
@@ -17,7 +17,7 @@ package() {
 
   ##  Install licenses
   install -d $pkgdir/usr/share/licenses/$pkgname
-  #install -m644 $srcdir/LICENSE $pkgdir/usr/share/licenses/$pkgname/
+  install -m644 $srcdir/LICENSE $pkgdir/usr/share/licenses/$pkgname/
 
   ##  Install binaries
   install -d $pkgdir/usr/share/$pkgname
