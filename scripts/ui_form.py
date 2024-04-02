@@ -54,7 +54,7 @@ class Ui_Dialog(object):
     # setupUi
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"About", None))
         self.groupBox.setTitle(QCoreApplication.translate("Dialog", u"GroupBox", None))
     # retranslateUi
 

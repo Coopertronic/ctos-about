@@ -14,8 +14,9 @@ class Dialog(QDialog):
         super().__init__(parent)
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
-        self.ui.textBrowser.append('<h1>Hello World</h1>')
-        self.ui.textBrowser.append('This is a quick demo.')
+        self.ui.textBrowser.append('<h1>About Coopertronic OS</h1>')
+        self.ui.textBrowser.append('<h2>Introduction</h2>')
+        self.ui.textBrowser.append('Coopertronic OS is designed primarily for myself to use on all my machines. I have included the things I commonly use from day to day.')
         self.ui.textBrowser.append('This is just text in a browser')
         self.ui.textBrowser.append('A very simple browser')
 
